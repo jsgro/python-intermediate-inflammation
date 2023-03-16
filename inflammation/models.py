@@ -77,3 +77,19 @@ def patient_std(data):
     """
     # To compute for each row we need to use axis=1
     return np.std(data, axis=1)
+
+# In fact it is suggested to look for all patients daily
+# which would be axis=0, i..e columns
+
+def daily_std(data):
+    """Compute standard deviation for each day on all patients on original
+    inflammation data 2D array.
+
+    :param data: 2D array of inflammation data
+    :type data: ndarray
+
+    """
+    # To compute for each COLUMN we need to use axis=0
+    return np.std(data, axis=0)
+
+
