@@ -18,7 +18,7 @@ def visualize(data_dict):
         axes = fig.add_subplot(1, num_plots, i + 1)
 
         axes.set_ylabel(name)
-        axes.plot(data)
+        axes.plot(data, color="green")
 
     fig.tight_layout()
 
